@@ -1,21 +1,26 @@
-#include	<stdio.h>
+#include <stdio.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return:0 if successful
+ * Return: alway returns 0
  *
  */
-
-int	 main(void)
-
+int main(void)
 {
-	int num;
-	char letter;
+	unsigned char a = '0';
+	int i;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
-	for (letter = 'a'; letter <= 'f', letter++);
-		putchar(letter);
+	for (i = 0; i < 10; i++)
+	{
+		putchar(a);
+		a++;
+	}
+	a = '1';
+	for (i = 0; i < 6; i++)
+	{
+		putchar('0' + a);
+		a++;
+	}
 	putchar('\n');
 	return (0);
 }
