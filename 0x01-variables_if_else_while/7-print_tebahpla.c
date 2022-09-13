@@ -9,10 +9,12 @@ int	main(void)
 {
 	char alphaReverse = 'z';
 
-	while (alphaReverse > 'a')
+	while (alphaReverse >= 'a')
 	{
 		putchar(alphaReverse);
-		alphaReverse++;
+		alphaReverse--;
 	}
+
+	putchar('\n');
 	return (0);
 }
