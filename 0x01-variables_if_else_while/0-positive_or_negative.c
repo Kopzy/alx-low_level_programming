@@ -35,7 +35,7 @@ int main(void)
 		}
 		if	(n < 0)
 		{
-			printf("%d is a positive number\n", n);
+			printf("%d is a negative number\n", n);
 		}
 
 		return (0);
